@@ -1,0 +1,49 @@
+{
+  "businessName": "ESTHERELLA CONCEPT",
+  "industry": "Fashion and Creative Design",
+  "tone": "creative-elegant",
+  "tagline": "Where Style Meets Artistry",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to ESTHERELLA CONCEPT - Your Premier Destination for Bespoke Fashion and Creative Design in Ogun State. We transform fabric into art, creating stunning pieces that celebrate your unique style and personality. From elegant evening wear to contemporary casual designs, we bring your fashion dreams to life with exceptional craftsmanship and attention to detail.",
+      "imagePrompt": "Photorealistic image of a sophisticated Nigerian fashion atelier with elegant fabric displays, rich African print textiles draped artistically, warm golden lighting illuminating a modern design workspace with measuring tapes, fashion sketches on a sleek table, and colorful thread spools, professional fashion studio atmosphere in Ogun State Nigeria",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "ESTHERELLA CONCEPT is a leading fashion and creative design studio serving Ado Odo Ota and the broader Ogun State community. We specialize in creating custom clothing that reflects the vibrant spirit of Nigerian fashion while incorporating contemporary design trends. Our team combines traditional tailoring excellence with modern creative vision to deliver garments that make you look and feel extraordinary. Whether you need bespoke outfits for special occasions, corporate wear, or everyday elegance, we offer personalized design consultations and expert craftsmanship that ensures every piece fits perfectly and expresses your individual style. At ESTHERELLA CONCEPT, fashion is not just about clothing—it's about confidence, identity, and artistic expression.",
+      "imagePrompt": "Photorealistic interior of a vibrant Nigerian fashion design studio showing a diverse collection of beautifully finished garments on elegant mannequins, colorful African prints and contemporary fabrics, a welcoming consultation area with comfortable seating, natural light streaming through windows, professional sewing machines visible in background, warm and inviting atmosphere in Ogun State",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Services",
+      "copy": "**Custom Fashion Design** - Bespoke clothing tailored to your exact measurements and style preferences, from concept to creation.\n\n**Bridal & Special Occasion Wear** - Stunning wedding gowns, bridesmaid dresses, aso ebi coordination, and event outfits that make unforgettable statements.\n\n**Corporate & Casual Wear** - Professional attire, everyday fashion pieces, and versatile wardrobe essentials designed for the modern Nigerian.\n\n**Fashion Consultations** - Expert style advice, wardrobe planning, and personalized design sessions to help you discover your perfect look.\n\n**Alterations & Repairs** - Professional garment adjustments, resizing, and restoration services to keep your favorite pieces looking perfect.\n\n**Creative Design Projects** - Innovative fashion concepts, textile art, and collaborative design work for special projects and creative ventures.",
+      "imagePrompt": "Photorealistic collage showcasing various Nigerian fashion services: elegant wedding dress on mannequin, professional business attire, colorful traditional outfits, designer working on fabric with measuring tape, fashion sketches, sewing equipment, and satisfied customers trying on garments, bright professional studio lighting in Ogun State Nigeria",
+      "layout": "grid"
+    },
+    {
+      "id": "testimonials",
+      "name": "Client Testimonials",
+      "copy": "**Blessing Adeyemi** - \"ESTHERELLA CONCEPT created the most beautiful wedding dress for me. The attention to detail was incredible, and I felt like a queen on my special day. Thank you for making my dreams come true!\"\n\n**Tunde Okafor** - \"I needed corporate wear that was both professional and stylish. The team delivered perfectly fitted suits that get compliments every time I wear them. Excellent craftsmanship!\"\n\n**Funmi Johnson** - \"From my first consultation to the final fitting, everything was seamless. They really understand Nigerian fashion and how to make clothes that celebrate our beauty. Highly recommended!\"\n\n**Chioma Nwankwo** - \"The creativity and skill at ESTHERELLA CONCEPT are unmatched. They turned my ideas into reality and created outfits that are uniquely mine. I'm a customer for life!\"",
+      "imagePrompt": "Photorealistic image of happy Nigerian customers wearing beautiful custom-designed outfits, diverse age groups and styles, candid moments of satisfied clients admiring their garments in mirrors, warm and authentic testimonial atmosphere, professional photography in a Nigerian fashion studio setting",
+      "layout": "cards"
+    },
+    {
+      "id": "contact",
+      "name": "Contact Us",
+      "copy": "Ready to elevate your style? Visit ESTHERELLA CONCEPT today for a personalized consultation. We're conveniently located in Ado Odo Ota, Ogun State, and we're excited to help you create fashion that tells your story.\n\n**Visit Our Studio:**\n61 Mathew Street, Shehu Malik Complex\nOdo Ado Ekiti\nAdo Odo Ota Local Government\nOgun State, Nigeria\n\n**Call or WhatsApp:** +234 706 515 6522\n\nOur studio is open for walk-ins and appointments. Contact us today to schedule your consultation and let's begin creating your perfect wardrobe together. Follow us on social media to see our latest designs and fashion inspiration!",
+      "imagePrompt": "Photorealistic image of a welcoming Nigerian fashion studio entrance with clear signage for ESTHERELLA CONCEPT, friendly staff member greeting clients, comfortable reception area with fashion magazines and fabric samples, professional yet warm atmosphere, located in Ogun State Nigeria, inviting storefront with large windows",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "+234 706 515 6522",
+    "email": "info@estherellaconcept.com",
+    "address": "61 Mathew Street, Shehu Malik Complex, Odo Ado Ekiti, Ado Odo Ota LGA, Ogun State, Nigeria",
+    "whatsapp": "https://wa.me/2347065156522"
+  }
+}
