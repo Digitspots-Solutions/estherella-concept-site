@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESTHERELLA CONCEPT - Where Style Meets Artistry</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@300;400;500&display=swap">
+    <title>Rebecca Becky Trust Company Limited - Securing Your Legacy, Building Generational Wealth</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&family=Manrope:wght@300;400;500&display=swap">
     <style>
         :root {
-            --primary-color: #1b0c35;
-            --accent-color: #d05278;
-            --bg-color: #FBF7FA;
-            --text-color: #1A0828;
-            --surface-color: #220c33;
-            --secondary-accent: #bc9074;
-            --font-display: 'Instrument Serif', serif;
-            --font-body: 'Karla', sans-serif;
-            --border-radius: 16px;
+            --color-primary: #0b0f18;
+            --color-accent: #1d87f5;
+            --color-bg: #F4F6FA;
+            --color-text: #0A0E14;
+            --color-surface: #18232e;
+            --color-secondary-accent: #34d5a0;
+            --font-display: 'Titillium Web', sans-serif;
+            --font-body: 'Manrope', sans-serif;
+            --border-radius: 4px;
         }
 
         * {
@@ -30,45 +30,32 @@
 
         body {
             font-family: var(--font-body);
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            line-height: 1.7;
-            overflow-x: hidden;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            line-height: 1.6;
         }
 
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-display);
-            font-weight: 400;
+            font-weight: 700;
             line-height: 1.2;
         }
 
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(24px);
-            }
-            to {
-                opacity: 1;
-                transform: none;
-            }
-        }
-
+        /* Navigation */
         nav {
-            position: fixed;
+            position: sticky;
             top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            background: rgba(251, 247, 250, 0.95);
+            background: rgba(11, 15, 24, 0.95);
             backdrop-filter: blur(10px);
-            padding: 1.25rem 2rem;
-            box-shadow: 0 2px 20px rgba(27, 12, 53, 0.08);
-            animation: fadeUp 0.6s ease forwards;
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(29, 135, 245, 0.1);
         }
 
         .nav-container {
             max-width: 1400px;
             margin: 0 auto;
+            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -76,10 +63,11 @@
 
         .logo {
             font-family: var(--font-display);
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            font-weight: 400;
-            letter-spacing: 0.5px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: -0.5px;
         }
 
         .nav-links {
@@ -89,16 +77,16 @@
         }
 
         .nav-links a {
+            color: #fff;
             text-decoration: none;
-            color: var(--text-color);
-            font-weight: 400;
+            font-weight: 500;
             font-size: 0.95rem;
             transition: color 0.3s ease;
             position: relative;
         }
 
         .nav-links a:hover {
-            color: var(--accent-color);
+            color: var(--color-accent);
         }
 
         .nav-links a::after {
@@ -108,7 +96,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: var(--accent-color);
+            background: var(--color-accent);
             transition: width 0.3s ease;
         }
 
@@ -116,17 +104,19 @@
             width: 100%;
         }
 
+        /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
             cursor: pointer;
             gap: 4px;
+            z-index: 1001;
         }
 
         .mobile-menu-btn span {
             width: 25px;
             height: 3px;
-            background: var(--text-color);
+            background: #fff;
             transition: all 0.3s ease;
             transform-origin: center;
         }
@@ -143,14 +133,15 @@
             transform: rotate(-45deg) translate(6px, -6px);
         }
 
+        /* Mobile Menu */
         .mobile-menu {
             position: fixed;
             top: 70px;
             right: -100%;
             width: 300px;
             height: calc(100vh - 70px);
-            background: var(--bg-color);
-            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            background: var(--color-primary);
+            box-shadow: -2px 0 10px rgba(29, 135, 245, 0.2);
             transition: right 0.3s ease;
             z-index: 999;
             padding: 2rem;
@@ -170,7 +161,7 @@
 
         .mobile-menu ul a {
             text-decoration: none;
-            color: var(--text-color);
+            color: #fff;
             font-size: 1.1rem;
             font-weight: 500;
             transition: color 0.3s ease;
@@ -179,43 +170,37 @@
         }
 
         .mobile-menu ul a:hover {
-            color: var(--primary-color);
+            color: var(--color-accent);
         }
 
-        section {
-            padding: 80px 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
+        /* Hero Section */
         #hero {
             position: relative;
-            min-height: 100vh;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 120px 2rem 80px;
+            color: #fff;
             overflow: hidden;
             animation: fadeUp 0.6s ease forwards;
         }
 
-        .hero-bg {
+        #hero::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
+            background-image: url('https://images.pexels.com/photos/6876802/pexels-photo-6876802.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-size: cover;
+            background-position: center;
             z-index: -2;
         }
 
-        .hero-bg img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .hero-overlay {
+        #hero::after {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
@@ -227,55 +212,73 @@
 
         .hero-content {
             max-width: 900px;
-            color: white;
+            padding: 0 2rem;
             z-index: 1;
         }
 
         .hero-content h1 {
-            font-size: 4rem;
+            font-size: 3.5rem;
             margin-bottom: 1.5rem;
-            letter-spacing: 1px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
 
         .hero-content .tagline {
             font-size: 1.8rem;
-            font-family: var(--font-display);
             margin-bottom: 2rem;
-            color: rgba(255, 255, 255, 0.95);
+            font-weight: 600;
+            color: var(--color-secondary-accent);
         }
 
         .hero-content p {
             font-size: 1.15rem;
             margin-bottom: 2.5rem;
             line-height: 1.8;
-            color: rgba(255, 255, 255, 0.9);
+            font-weight: 300;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 1rem 3rem;
-            background: var(--accent-color);
-            color: white;
+            background: var(--color-accent);
+            color: #fff;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
             text-decoration: none;
             border-radius: var(--border-radius);
-            font-weight: 500;
-            font-size: 1.1rem;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 24px rgba(208, 82, 120, 0.35);
+            box-shadow: 0 4px 15px rgba(29, 135, 245, 0.4);
         }
 
         .cta-button:hover {
-            background: #bd3e63;
+            background: #1570d8;
             transform: translateY(-2px);
-            box-shadow: 0 12px 32px rgba(208, 82, 120, 0.45);
+            box-shadow: 0 6px 20px rgba(29, 135, 245, 0.6);
         }
 
+        /* Section Styles */
+        section {
+            padding: 80px 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        /* About Section */
         #about {
+            background: #fff;
             animation: fadeUp 0.6s ease forwards;
             animation-delay: 0.1s;
         }
 
-        .about-container {
+        .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
@@ -284,164 +287,247 @@
 
         .about-image {
             width: 100%;
-            height: 600px;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: 0 16px 48px rgba(27, 12, 53, 0.15);
-        }
-
-        .about-image img {
-            width: 100%;
-            height: 100%;
+            height: 500px;
             object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: 0 8px 30px rgba(11, 15, 24, 0.15);
         }
 
-        .about-content h2 {
-            font-size: 3rem;
+        .about-text h2 {
             margin-bottom: 1.5rem;
-            color: var(--primary-color);
         }
 
-        .about-content p {
-            font-size: 1.1rem;
-            line-height: 1.9;
-            color: var(--text-color);
+        .about-text p {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
+            color: var(--color-text);
         }
 
+        /* Services Section */
         #services {
-            background: white;
+            background: var(--color-bg);
             animation: fadeUp 0.6s ease forwards;
             animation-delay: 0.2s;
         }
 
         #services h2 {
-            font-size: 3rem;
             text-align: center;
             margin-bottom: 3rem;
-            color: var(--primary-color);
         }
 
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
         }
 
         .service-card {
-            background: var(--bg-color);
-            padding: 2.5rem;
+            background: #fff;
+            padding: 2rem;
             border-radius: var(--border-radius);
-            box-shadow: 0 8px 32px rgba(27, 12, 53, 0.08);
+            box-shadow: 0 4px 20px rgba(11, 15, 24, 0.08);
             transition: all 0.3s ease;
+            border-left: 4px solid var(--color-accent);
         }
 
         .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 16px 48px rgba(27, 12, 53, 0.12);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(29, 135, 245, 0.2);
         }
 
         .service-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-bottom: 1rem;
-            color: var(--primary-color);
+            color: var(--color-primary);
         }
 
         .service-card p {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: var(--text-color);
+            color: var(--color-text);
+            line-height: 1.7;
         }
 
-        #testimonials {
+        /* Why Choose Us Section */
+        #why-choose-us {
+            background: #fff;
             animation: fadeUp 0.6s ease forwards;
             animation-delay: 0.3s;
         }
 
-        #testimonials h2 {
-            font-size: 3rem;
+        #why-choose-us h2 {
             text-align: center;
             margin-bottom: 3rem;
-            color: var(--primary-color);
         }
 
-        .testimonials-grid {
+        .why-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
         }
 
-        .testimonial-card {
-            background: white;
-            padding: 2.5rem;
+        .why-card {
+            background: var(--color-bg);
+            padding: 2rem;
             border-radius: var(--border-radius);
-            border-left: 4px solid var(--accent-color);
-            box-shadow: 0 8px 32px rgba(27, 12, 53, 0.08);
-        }
-
-        .testimonial-card h4 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-            font-family: var(--font-body);
-            font-weight: 500;
-        }
-
-        .testimonial-card p {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: var(--text-color);
-            font-style: italic;
-        }
-
-        #contact {
-            background: var(--surface-color);
-            color: white;
             text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .why-card:hover {
+            background: var(--color-surface);
+            color: #fff;
+            transform: translateY(-5px);
+        }
+
+        .why-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-accent);
+        }
+
+        .why-card:hover h3 {
+            color: var(--color-secondary-accent);
+        }
+
+        .why-card p {
+            line-height: 1.7;
+        }
+
+        .why-card:hover p {
+            color: #e0e0e0;
+        }
+
+        /* Process Section */
+        #process {
+            background: var(--color-bg);
             animation: fadeUp 0.6s ease forwards;
             animation-delay: 0.4s;
         }
 
-        #contact h2 {
-            font-size: 3rem;
-            margin-bottom: 2rem;
-            color: white;
+        #process h2 {
+            text-align: center;
+            margin-bottom: 3rem;
         }
 
-        .contact-content {
-            max-width: 800px;
+        .process-steps {
+            max-width: 900px;
             margin: 0 auto;
         }
 
-        .contact-content p {
-            font-size: 1.15rem;
-            line-height: 1.9;
+        .process-step {
+            background: #fff;
+            padding: 2rem;
             margin-bottom: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(11, 15, 24, 0.08);
+            position: relative;
+            padding-left: 5rem;
+        }
+
+        .process-step::before {
+            content: attr(data-step);
+            position: absolute;
+            left: 2rem;
+            top: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--color-accent);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: var(--font-display);
+        }
+
+        .process-step h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: var(--color-primary);
+        }
+
+        .process-step p {
+            color: var(--color-text);
+            line-height: 1.7;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: #fff;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .contact-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: 0 8px 30px rgba(11, 15, 24, 0.15);
+        }
+
+        .contact-info h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
+            color: var(--color-text);
         }
 
         .contact-details {
-            margin: 3rem 0;
-            font-size: 1.1rem;
+            margin-top: 2rem;
         }
 
-        .contact-details strong {
-            display: block;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
+        .contact-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item h3 {
             font-size: 1.2rem;
-            color: var(--accent-color);
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
         }
 
-        .contact-details a {
-            color: white;
+        .contact-item a {
+            color: var(--color-accent);
             text-decoration: none;
+            font-weight: 500;
             transition: color 0.3s ease;
         }
 
-        .contact-details a:hover {
-            color: var(--accent-color);
+        .contact-item a:hover {
+            color: #1570d8;
         }
 
+        .whatsapp-link {
+            display: inline-block;
+            background: #25D366;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-link:hover {
+            background: #20ba5a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -453,7 +539,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
             z-index: 999;
             transition: all 0.3s ease;
             text-decoration: none;
@@ -461,37 +547,64 @@
 
         .whatsapp-float:hover {
             transform: scale(1.1);
-            box-shadow: 0 6px 24px rgba(37, 211, 102, 0.6);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
         }
 
         .whatsapp-float::before {
             content: '💬';
-            font-size: 28px;
+            font-size: 2rem;
         }
 
+        /* Footer */
         footer {
-            background: var(--primary-color);
-            color: white;
+            background: var(--color-primary);
+            color: #fff;
             text-align: center;
             padding: 2rem;
+        }
+
+        footer p {
             font-size: 0.95rem;
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero-content .tagline {
+                font-size: 1.5rem;
+            }
+
+            section {
+                padding: 60px 2rem;
+            }
         }
 
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-            
+
             .mobile-menu-btn {
                 display: flex;
             }
 
-            section {
-                padding: 48px 1.5rem;
-            }
-
             .hero-content h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
 
             .hero-content .tagline {
@@ -502,61 +615,53 @@
                 font-size: 1rem;
             }
 
-            .about-container {
+            section {
+                padding: 48px 1.5rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            .about-content,
+            .contact-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
 
-            .about-image {
-                height: 400px;
+            .about-image,
+            .contact-image {
+                height: 350px;
             }
 
-            .about-content h2,
-            #services h2,
-            #testimonials h2,
-            #contact h2 {
-                font-size: 2rem;
-            }
-
-            .services-grid,
-            .testimonials-grid {
+            .services-grid {
                 grid-template-columns: 1fr;
             }
-        }
 
-        @media (max-width: 480px) {
-            .hero-content h1 {
-                font-size: 2rem;
+            .why-grid {
+                grid-template-columns: 1fr;
             }
 
-            .hero-content .tagline {
-                font-size: 1.1rem;
+            .process-step {
+                padding-left: 2rem;
             }
 
-            .cta-button {
-                padding: 0.875rem 2rem;
-                font-size: 1rem;
+            .process-step::before {
+                position: relative;
+                left: 0;
+                top: 0;
+                margin-bottom: 1rem;
             }
 
             .whatsapp-float {
-                width: 50px;
-                height: 50px;
                 bottom: 20px;
                 right: 20px;
+                width: 50px;
+                height: 50px;
             }
 
             .whatsapp-float::before {
-                font-size: 24px;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            section {
-                padding: 80px 3rem;
-            }
-
-            #hero {
-                padding: 140px 3rem 100px;
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -564,12 +669,13 @@
 <body>
     <nav>
         <div class="nav-container">
-            <div class="logo">ESTHERELLA CONCEPT</div>
+            <a href="#hero" class="logo">Rebecca Becky Trust</a>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="#process">Our Process</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
@@ -585,135 +691,172 @@
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#why-choose-us">Why Choose Us</a></li>
+            <li><a href="#process">Our Process</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
     <section id="hero">
-        <div class="hero-bg">
-            <img src="https://images.pexels.com/photos/32184490/pexels-photo-32184490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="ESTHERELLA CONCEPT Fashion Studio">
-        </div>
-        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>ESTHERELLA CONCEPT</h1>
-            <p class="tagline">Where Style Meets Artistry</p>
-            <p>Welcome to ESTHERELLA CONCEPT - Your Premier Destination for Bespoke Fashion and Creative Design in Ogun State. We transform fabric into art, creating stunning pieces that celebrate your unique style and personality. From elegant evening wear to contemporary casual designs, we bring your fashion dreams to life with exceptional craftsmanship and attention to detail.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <h1>Rebecca Becky Trust Company Limited</h1>
+            <p class="tagline">Securing Your Legacy, Building Generational Wealth</p>
+            <p>As Nigeria's trusted partner in wealth management and estate planning, we help individuals and families protect their assets, plan for succession, and build lasting financial security across generations. With professional expertise and personalized attention, we transform your financial aspirations into structured reality.</p>
+            <a href="#contact" class="cta-button">Start Your Journey</a>
         </div>
     </section>
 
     <section id="about">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="https://images.pexels.com/photos/13128709/pexels-photo-13128709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="ESTHERELLA CONCEPT Studio Interior">
-            </div>
+        <div class="container">
             <div class="about-content">
-                <h2>About Us</h2>
-                <p>ESTHERELLA CONCEPT is a leading fashion and creative design studio serving Ado Odo Ota and the broader Ogun State community. We specialize in creating custom clothing that reflects the vibrant spirit of Nigerian fashion while incorporating contemporary design trends. Our team combines traditional tailoring excellence with modern creative vision to deliver garments that make you look and feel extraordinary. Whether you need bespoke outfits for special occasions, corporate wear, or everyday elegance, we offer personalized design consultations and expert craftsmanship that ensures every piece fits perfectly and expresses your individual style. At ESTHERELLA CONCEPT, fashion is not just about clothing—it's about confidence, identity, and artistic expression.</p>
+                <img src="https://images.pexels.com/photos/26692092/pexels-photo-26692092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Rebecca Becky Trust Company Professional" class="about-image">
+                <div class="about-text">
+                    <h2>About Rebecca Becky Trust Company Limited</h2>
+                    <p>Rebecca Becky Trust Company Limited is a premier wealth management and estate planning firm serving discerning clients across Nigeria. Based in Ogun State with deep roots in the financial services sector, we specialize in comprehensive estate planning, trust administration, wealth preservation, and succession planning.</p>
+                    <p>Our approach combines global best practices with intimate understanding of Nigerian legal frameworks, family dynamics, and cultural values. We recognize that wealth is more than numbers—it represents your life's work, your family's future, and your lasting impact.</p>
+                    <p>Led by experienced wealth management professionals, our firm provides confidential, personalized service tailored to each client's unique circumstances. Whether you're building your first estate plan, restructuring family holdings, or planning multi-generational wealth transfer, we deliver solutions that protect what matters most.</p>
+                    <p>We serve business owners, professionals, families, and institutions who value strategic thinking, meticulous attention to detail, and unwavering commitment to their financial security.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Custom Fashion Design</h3>
-                <p>Bespoke clothing tailored to your exact measurements and style preferences, from concept to creation.</p>
-            </div>
-            <div class="service-card">
-                <h3>Bridal & Special Occasion Wear</h3>
-                <p>Stunning wedding gowns, bridesmaid dresses, aso ebi coordination, and event outfits that make unforgettable statements.</p>
-            </div>
-            <div class="service-card">
-                <h3>Corporate & Casual Wear</h3>
-                <p>Professional attire, everyday fashion pieces, and versatile wardrobe essentials designed for the modern Nigerian.</p>
-            </div>
-            <div class="service-card">
-                <h3>Fashion Consultations</h3>
-                <p>Expert style advice, wardrobe planning, and personalized design sessions to help you discover your perfect look.</p>
-            </div>
-            <div class="service-card">
-                <h3>Alterations & Repairs</h3>
-                <p>Professional garment adjustments, resizing, and restoration services to keep your favorite pieces looking perfect.</p>
-            </div>
-            <div class="service-card">
-                <h3>Creative Design Projects</h3>
-                <p>Innovative fashion concepts, textile art, and collaborative design work for special projects and creative ventures.</p>
+        <div class="container">
+            <h2>Comprehensive Wealth Management & Estate Planning Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Estate Planning & Will Preparation</h3>
+                    <p>Structured documentation of your wishes, asset distribution strategies, and guardian appointments. We ensure your estate plan reflects your values and protects your beneficiaries while minimizing potential disputes and tax implications.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Trust Administration & Management</h3>
+                    <p>Professional establishment and ongoing management of family trusts, charitable trusts, and special purpose trusts. We handle all administrative responsibilities, compliance requirements, and beneficiary communications with absolute discretion.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Succession Planning for Business Owners</h3>
+                    <p>Comprehensive strategies for seamless business transition to next generation or designated successors. We address ownership transfer, management continuity, tax efficiency, and family harmony throughout the succession process.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Wealth Preservation Strategies</h3>
+                    <p>Proactive asset protection planning, investment oversight, and risk management tailored to preserve and grow your wealth across market cycles and generational transitions.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Retirement Planning</h3>
+                    <p>Personalized retirement income strategies, pension optimization, and lifestyle planning to ensure financial independence and dignity in your golden years.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Family Wealth Education</h3>
+                    <p>Preparing next generations for responsible wealth stewardship through education, mentorship, and graduated responsibility frameworks.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Legal & Tax Advisory Coordination</h3>
+                    <p>Collaboration with your legal and tax professionals to ensure integrated, optimized estate and wealth management solutions that comply with all Nigerian regulations.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="testimonials">
-        <h2>Client Testimonials</h2>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <h4>Blessing Adeyemi</h4>
-                <p>ESTHERELLA CONCEPT created the most beautiful wedding dress for me. The attention to detail was incredible, and I felt like a queen on my special day. Thank you for making my dreams come true!</p>
+    <section id="why-choose-us">
+        <div class="container">
+            <h2>Why Discerning Nigerians Choose Rebecca Becky Trust Company</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Local Expertise, Global Standards</h3>
+                    <p>We understand Nigerian family structures, inheritance customs, and legal frameworks while applying international wealth management best practices.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Absolute Confidentiality</h3>
+                    <p>Your financial affairs remain strictly private. We maintain the highest standards of professional discretion and client confidentiality.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Personalized Attention</h3>
+                    <p>No two families are identical. We craft bespoke solutions aligned with your specific goals, values, and circumstances—never cookie-cutter approaches.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Long-Term Partnership</h3>
+                    <p>Wealth management is a journey, not a transaction. We build lasting relationships that serve you, your children, and your grandchildren.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Integrated Approach</h3>
+                    <p>We coordinate seamlessly with your existing advisors—lawyers, accountants, investment managers—to ensure all aspects of your wealth work in harmony.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Proven Track Record</h3>
+                    <p>Our clients trust us with their most important financial decisions because we consistently deliver results with integrity and professionalism.</p>
+                </div>
             </div>
-            <div class="testimonial-card">
-                <h4>Tunde Okafor</h4>
-                <p>I needed corporate wear that was both professional and stylish. The team delivered perfectly fitted suits that get compliments every time I wear them. Excellent craftsmanship!</p>
+        </div>
+    </section>
+
+    <section id="process">
+        <div class="container">
+            <h2>How We Serve You: Our Client-Centered Process</h2>
+            <div class="process-steps">
+                <div class="process-step" data-step="1">
+                    <h3>Confidential Initial Consultation</h3>
+                    <p>We begin with a private conversation to understand your goals, concerns, and current situation. This no-obligation meeting helps us determine how we can best serve you.</p>
+                </div>
+                <div class="process-step" data-step="2">
+                    <h3>Comprehensive Analysis</h3>
+                    <p>Our team conducts thorough review of your assets, liabilities, family structure, and existing plans. We identify opportunities, risks, and gaps in your current wealth management approach.</p>
+                </div>
+                <div class="process-step" data-step="3">
+                    <h3>Strategic Plan Development</h3>
+                    <p>We craft a detailed, customized plan addressing your immediate needs and long-term objectives. You'll receive clear recommendations with transparent explanations of benefits and considerations.</p>
+                </div>
+                <div class="process-step" data-step="4">
+                    <h3>Implementation</h3>
+                    <p>Once you approve the plan, we coordinate all necessary documentation, registrations, and arrangements with meticulous attention to legal and regulatory compliance.</p>
+                </div>
+                <div class="process-step" data-step="5">
+                    <h3>Ongoing Management & Review</h3>
+                    <p>Wealth management requires continuous attention. We provide regular reviews, proactive adjustments as circumstances change, and responsive support whenever you need us.</p>
+                </div>
             </div>
-            <div class="testimonial-card">
-                <h4>Funmi Johnson</h4>
-                <p>From my first consultation to the final fitting, everything was seamless. They really understand Nigerian fashion and how to make clothes that celebrate our beauty. Highly recommended!</p>
-            </div>
-            <div class="testimonial-card">
-                <h4>Chioma Nwankwo</h4>
-                <p>The creativity and skill at ESTHERELLA CONCEPT are unmatched. They turned my ideas into reality and created outfits that are uniquely mine. I'm a customer for life!</p>
+            <div style="text-align: center; margin-top: 2rem; font-style: italic; color: var(--color-primary); font-weight: 600;">
+                Your financial security is too important for anything less than excellence.
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="contact-content">
-            <h2>Contact Us</h2>
-            <p>Ready to elevate your style? Visit ESTHERELLA CONCEPT today for a personalized consultation. We're conveniently located in Ado Odo Ota, Ogun State, and we're excited to help you create fashion that tells your story.</p>
-            <div class="contact-details">
-                <strong>Visit Our Studio:</strong>
-                <p>61 Mathew Street, Shehu Malik Complex<br>
-                Odo Ado Ekiti<br>
-                Ado Odo Ota Local Government<br>
-                Ogun State, Nigeria</p>
-                
-                <strong>Call or WhatsApp:</strong>
-                <p><a href="tel:+2347065156522">+234 706 515 6522</a></p>
-                
-                <strong>Email:</strong>
-                <p><a href="mailto:info@estherellaconcept.com">info@estherellaconcept.com</a></p>
-            </div>
-            <p>Our studio is open for walk-ins and appointments. Contact us today to schedule your consultation and let's begin creating your perfect wardrobe together. Follow us on social media to see our latest designs and fashion inspiration!</p>
-        </div>
-    </section>
-
-    <a href="https://wa.me/2347065156522" class="whatsapp-float" target="_blank" rel="noopener noreferrer"></a>
-
-    <footer>
-        <p>&copy; 2025 ESTHERELLA CONCEPT. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const mobileMenu = document.querySelector('.mobile-menu');
-
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenuBtn.classList.toggle('active');
-                mobileMenu.classList.toggle('active');
-            });
-
-            // Close mobile menu when clicking a link
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenuBtn.classList.remove('active');
-                    mobileMenu.classList.remove('active');
-                });
-            });
-        }
-    </script>
-</body>
-</html>
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Begin Your Wealth Management Journey Today</h2>
+                    <p>Your financial legacy deserves expert attention. Contact Rebecca Becky Trust Company Limited for a confidential consultation.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h3>Office Address:</h3>
+                            <p>61 Matthew Street, Shehu Malik Complex<br>
+                            Odo, Ado Ekiti<br>
+                            Ado Odo Ota Local Government<br>
+                            Ogun State, Nigeria</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Phone:</h3>
+                            <p><a href="tel:+2347065156522">+234 706 515 6522</a></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Email:</h3>
+                            <p><a href="mailto:info@rebeccabecky.com">info@rebeccabecky.com</a></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Office Hours:</h3>
+                            <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
+                            Saturday: By Appointment Only</p>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-top: 1.5rem;">For immediate inquiries, reach us via WhatsApp or call during business hours. All consultations are treated with strict confidentiality.</p>
+                    
+                    <a href="https://wa.me/2347065156522" class="whatsapp-link" target="_blank">Contact Us on WhatsApp</a>
+                    
+                    <p style="margin-top: 1.5rem; font-style: italic;">Take the first step toward securing your family's financial future. We look forward to serving you.</p>
+                </div>
+                <img src="https://images.pexels.com/photos/19893586/pexels-photo-19893586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Rebecca Becky Trust Company Office
